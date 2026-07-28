@@ -1,6 +1,6 @@
 # simaidb
 
-Database for a washing machine game simulator. It is a simple database that stores the state of the washing machine, including the current cycle, water level, and other relevant information. It used in my [betterDXnet](https://github.com/betterDXnet) extension.
+Database for a washing machine game simulator. It is a simple database that stores the state of the washing machine, including the current cycle, water level, and other relevant information. It used in my [betterDXnet](https://github.com/michioxd/betterDXnet) extension.
 
 ## How to Use
 
