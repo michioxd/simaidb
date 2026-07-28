@@ -1,15 +1,10 @@
 # simaidb
 
-To install dependencies:
+Database for a washing machine game simulator. It is a simple database that stores the state of the washing machine, including the current cycle, water level, and other relevant information.
 
-```bash
-bun install
-```
+## How to Use
 
-To run:
+- `data.json`: main data.
+- `artwork/`: contains images used in the game.
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+You may need a types if you want to use this database in a TypeScript project. See [`tools/types.ts`](./tools/types.ts). Have fun and enjoy the washing machine simulator!
