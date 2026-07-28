@@ -36,24 +36,54 @@ const main = async () => {
   }
   const upstreamData = (await upstreamResponse.json()) as MaimaiData;
 
-  const missingSongs = upstreamData.songs.filter(
-    (song) => !localSongIds.has(song.songId),
-  );
+  // Cập nhật các trường metadata tĩnh từ upstream
+  localData.categories = upstreamData.categories;
+  localData.versions = upstreamData.versions;
+  localData.types = upstreamData.types;
+  localData.difficulties = upstreamData.difficulties;
+  localData.regions = upstreamData.regions;
 
-  if (missingSongs.length === 0) {
+  let newSongsCount = 0;
+  let missingSheetsCount = 0;
+
+  for (const upstreamSong of upstreamData.songs) {
+    if (!localSongIds.has(upstreamSong.songId)) {
+      localData.songs.push(upstreamSong);
+      newSongsCount++;
+    } else {
+      const localSong = localData.songs.find(
+        (s) => s.songId === upstreamSong.songId,
+      )!;
+      for (const upstreamSheet of upstreamSong.sheets) {
+        const hasSheet = localSong.sheets.some(
+          (s) =>
+            s.type === upstreamSheet.type &&
+            s.difficulty === upstreamSheet.difficulty,
+        );
+        if (!hasSheet) {
+          localSong.sheets.push(upstreamSheet);
+          missingSheetsCount++;
+        }
+      }
+    }
+  }
+
+  if (newSongsCount === 0 && missingSheetsCount === 0) {
     console.log("Up to date.");
     return;
   }
 
   console.log(
-    `Found ${missingSongs.length} missing song(s). Appending to local database...`,
+    `Found ${newSongsCount} missing song(s) and ${missingSheetsCount} missing sheet(s). Appending to local database...`,
   );
 
-  localData.songs.push(...missingSongs);
+  const songsToDownloadArtwork = localData.songs.filter(
+    (song) => !localSongIds.has(song.songId),
+  );
 
   console.log("Downloading artworks for missing songs...");
   const artworkUrls = new Map<string, string>();
-  for (const song of missingSongs) {
+  for (const song of songsToDownloadArtwork) {
     const artworkUrl = getSongArtworkUrl(song);
     if (artworkUrl && song.imageName) {
       artworkUrls.set(song.imageName, artworkUrl);
@@ -67,7 +97,15 @@ const main = async () => {
   );
   console.log(`Downloaded ${artworkUrls.size} artworks.`);
 
-  const missingSongsSet = new Set(missingSongs);
+  // Thay vì dùng missingSongsSet, ta theo dõi danh sách các bài hát mới thêm
+  // hoặc có sheet mới thêm để cập nhật từ Gamerch
+  const songsToUpdateSet = new Set(
+    localData.songs.filter(
+      (song) =>
+        !localSongIds.has(song.songId) ||
+        song.sheets.some((sheet) => !sheet.lastUpdateTime),
+    ),
+  );
 
   console.log("Fetching gamerch catalog...");
   const songLinks = new Map<string, SongLink>();
@@ -82,7 +120,7 @@ const main = async () => {
   for (const link of songLinks.values()) {
     const song = findSong(localData, link);
 
-    if (!song || !missingSongsSet.has(song)) {
+    if (!song || !songsToUpdateSet.has(song)) {
       continue;
     }
 
@@ -97,7 +135,7 @@ const main = async () => {
     const updated = updateSong(song, ratings, updateTime);
     if (updated > 0) {
       updatedSheets += updated;
-      console.log(`Updated ratings for newly added song: ${song.title}`);
+      console.log(`Updated ratings for song: ${song.title}`);
     }
   }
 
@@ -105,7 +143,7 @@ const main = async () => {
 
   await writeFile(localDataPath, JSON.stringify(localData, null, 2));
   console.log(
-    `Appended ${missingSongs.length} songs and updated ${updatedSheets} sheets.`,
+    `Appended ${newSongsCount} new songs, added ${missingSheetsCount} new sheets and updated ${updatedSheets} sheets.`,
   );
 };
 
