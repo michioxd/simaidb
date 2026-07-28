@@ -1,0 +1,20 @@
+{
+  "name": "simaidb",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "download": "bun tools/download.ts",
+    "rating": "bun tools/rating.ts",
+    "update": "bun tools/update.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
