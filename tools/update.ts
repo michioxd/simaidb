@@ -36,7 +36,6 @@ const main = async () => {
   }
   const upstreamData = (await upstreamResponse.json()) as MaimaiData;
 
-  // Cập nhật các trường metadata tĩnh từ upstream
   localData.categories = upstreamData.categories;
   localData.versions = upstreamData.versions;
   localData.types = upstreamData.types;
@@ -97,8 +96,6 @@ const main = async () => {
   );
   console.log(`Downloaded ${artworkUrls.size} artworks.`);
 
-  // Thay vì dùng missingSongsSet, ta theo dõi danh sách các bài hát mới thêm
-  // hoặc có sheet mới thêm để cập nhật từ Gamerch
   const songsToUpdateSet = new Set(
     localData.songs.filter(
       (song) =>
