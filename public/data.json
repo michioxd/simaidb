@@ -237544,6 +237544,530 @@
           "isSpecial": true
         }
       ]
+    },
+    {
+      "songId": "Story Continued",
+      "category": "maimai",
+      "title": "Story Continued",
+      "artist": "ユアミトス",
+      "bpm": 170,
+      "imageName": "283635d37c8244909195a0a4dacabf88e267ac9afdc52c1923aa930909d5b9b8.png",
+      "version": "CiRCLE PLUS",
+      "releaseDate": "2026-08-07",
+      "isNew": true,
+      "isLocked": true,
+      "comment": null,
+      "sheets": [
+        {
+          "type": "dx",
+          "difficulty": "basic",
+          "level": "4",
+          "levelValue": 4,
+          "internalLevel": null,
+          "internalLevelValue": 4,
+          "noteDesigner": "-",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 200
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 21:04"
+        },
+        {
+          "type": "dx",
+          "difficulty": "advanced",
+          "level": "6",
+          "levelValue": 6,
+          "internalLevel": null,
+          "internalLevelValue": 6.8,
+          "noteDesigner": "-",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 302
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 21:04"
+        },
+        {
+          "type": "dx",
+          "difficulty": "expert",
+          "level": "10+",
+          "levelValue": 10.6,
+          "internalLevel": null,
+          "internalLevelValue": 10.8,
+          "noteDesigner": "サファ太",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 466
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 21:04"
+        },
+        {
+          "type": "dx",
+          "difficulty": "master",
+          "level": "13",
+          "levelValue": 13,
+          "internalLevel": "13.2",
+          "internalLevelValue": 13.2,
+          "noteDesigner": "けんけん法師",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 657
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 21:04"
+        }
+      ]
+    },
+    {
+      "songId": "SERAPHIC SYNDROME",
+      "category": "maimai",
+      "title": "SERAPHIC SYNDROME",
+      "artist": "堀田英邦",
+      "bpm": 216,
+      "imageName": "fa56d1fdd9083adac5c200a75c27ba9f7bbf29a7be148b71364b1528a3439096.png",
+      "version": "CiRCLE PLUS",
+      "releaseDate": "2026-08-07",
+      "isNew": true,
+      "isLocked": true,
+      "comment": null,
+      "sheets": [
+        {
+          "type": "dx",
+          "difficulty": "basic",
+          "level": "6",
+          "levelValue": 6,
+          "internalLevel": null,
+          "internalLevelValue": 6,
+          "noteDesigner": "-",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 262
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 21:05"
+        },
+        {
+          "type": "dx",
+          "difficulty": "advanced",
+          "level": "8",
+          "levelValue": 8,
+          "internalLevel": null,
+          "internalLevelValue": 8,
+          "noteDesigner": "-",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 391
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 21:05"
+        },
+        {
+          "type": "dx",
+          "difficulty": "expert",
+          "level": "12",
+          "levelValue": 12,
+          "internalLevel": "12.2",
+          "internalLevelValue": 12.2,
+          "noteDesigner": "Jack",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 627
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 21:05"
+        },
+        {
+          "type": "dx",
+          "difficulty": "master",
+          "level": "14",
+          "levelValue": 14,
+          "internalLevel": "14.2",
+          "internalLevelValue": 14.2,
+          "noteDesigner": "はっぴー",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 1039
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 21:05"
+        }
+      ]
+    },
+    {
+      "songId": "終幕の傀儡",
+      "category": "maimai",
+      "title": "終幕の傀儡",
+      "artist": "RB.H × lixound × 薛南",
+      "bpm": 200,
+      "imageName": "594fafe048bcf55da92c7a7cab1cf71a7ecea1125163d2966eb9861c17c453bb.png",
+      "version": "CiRCLE PLUS",
+      "releaseDate": "2026-08-07",
+      "isNew": true,
+      "isLocked": true,
+      "comment": null,
+      "sheets": [
+        {
+          "type": "dx",
+          "difficulty": "basic",
+          "level": "4",
+          "levelValue": 4,
+          "internalLevel": null,
+          "internalLevelValue": 4,
+          "noteDesigner": "-",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 250
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 17:56"
+        },
+        {
+          "type": "dx",
+          "difficulty": "advanced",
+          "level": "8",
+          "levelValue": 8,
+          "internalLevel": null,
+          "internalLevelValue": 8.2,
+          "noteDesigner": "-",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 382
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 17:56"
+        },
+        {
+          "type": "dx",
+          "difficulty": "expert",
+          "level": "12+",
+          "levelValue": 12.6,
+          "internalLevel": "12.8",
+          "internalLevelValue": 12.8,
+          "noteDesigner": "サファ太",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 647
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 17:56"
+        },
+        {
+          "type": "dx",
+          "difficulty": "master",
+          "level": "14",
+          "levelValue": 14,
+          "internalLevel": "14.3",
+          "internalLevelValue": 14.3,
+          "noteDesigner": "Luxizhel",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 904
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 17:56"
+        }
+      ]
+    },
+    {
+      "songId": "Aegisfortia",
+      "category": "maimai",
+      "title": "Aegisfortia",
+      "artist": "お月さま交響曲",
+      "bpm": 238,
+      "imageName": "515f38c75cbaf931f61a711c47f15565a0601a6db47c4397e7c5e87913220076.png",
+      "version": "CiRCLE PLUS",
+      "releaseDate": "2026-08-07",
+      "isNew": true,
+      "isLocked": true,
+      "comment": null,
+      "sheets": [
+        {
+          "type": "dx",
+          "difficulty": "basic",
+          "level": "6",
+          "levelValue": 6,
+          "internalLevel": null,
+          "internalLevelValue": 6,
+          "noteDesigner": "-",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 299
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 19:53"
+        },
+        {
+          "type": "dx",
+          "difficulty": "advanced",
+          "level": "9",
+          "levelValue": 9,
+          "internalLevel": null,
+          "internalLevelValue": 9,
+          "noteDesigner": "-",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 405
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 19:53"
+        },
+        {
+          "type": "dx",
+          "difficulty": "expert",
+          "level": "12+",
+          "levelValue": 12.6,
+          "internalLevel": "12.7",
+          "internalLevelValue": 12.7,
+          "noteDesigner": "発光ビーバー",
+          "noteCounts": {
+            "tap": null,
+            "hold": null,
+            "slide": null,
+            "touch": null,
+            "break": null,
+            "total": 603
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 19:53"
+        },
+        {
+          "type": "dx",
+          "difficulty": "master",
+          "level": "14+",
+          "levelValue": 14.6,
+          "internalLevel": "14.8",
+          "internalLevelValue": 14.8,
+          "noteDesigner": "Cement Forest",
+          "noteCounts": {
+            "tap": 715,
+            "hold": 58,
+            "slide": 86,
+            "touch": 80,
+            "break": 135,
+            "total": 1074
+          },
+          "regions": {
+            "jp": true,
+            "intl": false,
+            "usa": false,
+            "cn": false
+          },
+          "regionOverrides": {
+            "intl": {}
+          },
+          "isSpecial": false,
+          "version": "CiRCLE PLUS",
+          "lastUpdateTime": "2026/08/07 19:53"
+        }
+      ]
     }
   ],
   "categories": [
@@ -237772,5 +238296,5 @@
       "name": "中国版 (舞萌DX)"
     }
   ],
-  "updateTime": "2026-08-06T01:28:38.106Z"
+  "updateTime": "2026-08-08T00:51:36.952Z"
 }
