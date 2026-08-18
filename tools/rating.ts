@@ -156,16 +156,17 @@ export const getTables = (html: string) =>
 
 export const getRatingSections = (html: string) => {
   const sections: { type: string; table: string }[] = [];
-  const headingPattern = /<h4\b[^>]*>([\s\S]*?譜面[\s\S]*?)<\/h4>/gi;
+  const headingPattern = /<h4\b[^>]*>([\s\S]*?)<\/h4>/gi;
   const headings = [...html.matchAll(headingPattern)];
 
   headings.forEach((headingMatch, index) => {
     const heading = htmlToText(headingMatch[1] ?? "");
-    const type = heading.includes("スタンダード")
-      ? "std"
-      : heading.includes("でらっくす")
-        ? "dx"
-        : undefined;
+    const type =
+      heading === "スタンダード譜面"
+        ? "std"
+        : heading === "でらっくす譜面"
+          ? "dx"
+          : undefined;
 
     if (!type || headingMatch.index === undefined) {
       return;
