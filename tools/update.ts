@@ -138,7 +138,7 @@ const main = async () => {
 
   localData.updateTime = new Date().toISOString();
 
-  await writeFile(localDataPath, JSON.stringify(localData, null, 2));
+  await writeFile(localDataPath, JSON.stringify(localData));
   console.log(
     `Appended ${newSongsCount} new songs, added ${missingSheetsCount} new sheets and updated ${updatedSheets} sheets.`,
   );
