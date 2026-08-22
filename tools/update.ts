@@ -12,6 +12,7 @@ import {
 } from "./rating";
 import { dataSource, type MaimaiData } from "./types";
 import { artworkDir, downloadFile, getSongArtworkUrl } from "./download";
+import { toRomaji } from "./romaji";
 
 const publicDir = join(import.meta.dir, "..", "public");
 const localDataPath = join(publicDir, "data.json");
@@ -133,6 +134,15 @@ const main = async () => {
     if (updated > 0) {
       updatedSheets += updated;
       console.log(`Updated ratings for song: ${song.title}`);
+    }
+  }
+
+  for (const song of localData.songs) {
+    if (song.title && !song.romajiTitle) {
+      const converted = await toRomaji(song.title);
+      if (converted !== song.title) {
+        song.romajiTitle = converted;
+      }
     }
   }
 

@@ -53,6 +53,8 @@ export type MaimaiSong = {
   comment?: string;
 
   sheets: MaimaiSheet[];
+
+  romajiTitle?: string; // optional, just to make it easier to search for songs with non-latin characters
 };
 
 /**

@@ -7,7 +7,8 @@
     "download": "bun tools/download.ts",
     "rating": "bun tools/rating.ts",
     "update": "bun tools/update.ts",
-    "parser": "bun tools/parser.ts"
+    "parser": "bun tools/parser.ts",
+    "romaji": "bun tools/romaji.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -17,6 +18,8 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
-    "csv-parser": "^3.2.1"
+    "csv-parser": "^3.2.1",
+    "kuroshiro": "^1.2.0",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0"
   }
 }
