@@ -6,7 +6,8 @@
   "scripts": {
     "download": "bun tools/download.ts",
     "rating": "bun tools/rating.ts",
-    "update": "bun tools/update.ts"
+    "update": "bun tools/update.ts",
+    "parser": "bun tools/parser.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -15,6 +16,7 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "csv-parser": "^3.2.1"
   }
 }
