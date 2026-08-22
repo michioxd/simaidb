@@ -144,6 +144,12 @@ const main = async () => {
         song.romajiTitle = converted;
       }
     }
+    if (song.artist && !song.romajiArtist) {
+      const convertedArtist = await toRomaji(song.artist);
+      if (convertedArtist !== song.artist) {
+        song.romajiArtist = convertedArtist;
+      }
+    }
   }
 
   localData.updateTime = new Date().toISOString();

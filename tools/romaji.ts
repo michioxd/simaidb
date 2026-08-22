@@ -32,22 +32,43 @@ const main = async () => {
   let skippedCount = 0;
 
   for (const song of data.songs) {
-    if (!song.title) {
+    if (!song.title && !song.artist) {
       skippedCount++;
       continue;
     }
 
-    const converted = await toRomaji(song.title);
+    let songConverted = false;
 
-    if (converted !== song.title) {
-      song.romajiTitle = converted;
+    if (song.title) {
+      const converted = await toRomaji(song.title);
+      if (converted !== song.title) {
+        song.romajiTitle = converted;
+        songConverted = true;
+        console.log(
+          colors.gray(`Converted title: `) +
+            colors.white(song.title) +
+            colors.gray(` -> `) +
+            colors.green(converted),
+        );
+      }
+    }
+
+    if (song.artist) {
+      const convertedArtist = await toRomaji(song.artist);
+      if (convertedArtist !== song.artist) {
+        song.romajiArtist = convertedArtist;
+        songConverted = true;
+        console.log(
+          colors.gray(`Converted artist: `) +
+            colors.white(song.artist) +
+            colors.gray(` -> `) +
+            colors.green(convertedArtist),
+        );
+      }
+    }
+
+    if (songConverted) {
       convertedCount++;
-      console.log(
-        colors.gray(`Converted: `) +
-          colors.white(song.title) +
-          colors.gray(` -> `) +
-          colors.green(converted),
-      );
     } else {
       skippedCount++;
     }
